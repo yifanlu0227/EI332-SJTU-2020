@@ -305,6 +305,7 @@ module sc_cu (op, func, rsrtequ, wmem, wreg, regrt, m2reg, aluc, shift,
 	//如果wpcir=0 插入气泡，把所有控制信号置0
 	//ebubble=1表示前一条指令是跳转类型，并且已经保证发生跳转，目前在id的这条指令是不该出现的
 	//所以把这条指令的控制信号全部清零
+	//由于后面补充了将IR清零的代码，所以这里的ebubble可以不用了。因为指令就是0，也产生不了什么控制信号了 
 	wire signal_valid = (wpcir) & (~ebubble);
 	assign wreg = signal_valid & (i_add | i_sub | i_and | i_or   | i_xor  |
                  i_sll | i_srl | i_sra | i_addi | i_andi |
