@@ -613,7 +613,7 @@ endmodule
 
 <img src="figure\1-1.PNG" alt="1-1" style="zoom:15%;" />    <img src="figure\1-2.PNG" alt="1-2" style="zoom:15%;" /> 
 
-<img src="1-3.PNG" alt="1-3" style="zoom:15%;" />    <img src="figure\1-4.PNG" alt="1-4" style="zoom:15%;" /> 
+<img src="figure\1-3.PNG" alt="1-3" style="zoom:15%;" />    <img src="figure\1-4.PNG" alt="1-4" style="zoom:15%;" /> 
 
 
 
