@@ -1,0 +1,12 @@
+module pipeid(mwreg,mrn,ern,ewreg,em2reg,mm2reg,dpc4,inst,ins,
+	wrn,wdi,ealu,malu,mmo,wwreg,mem_clock,resetn,
+	bpc,jpc,pcsource,wpcir,dwreg,dm2reg,dwmem,daluc,
+	da luimm,da,db,dimm,dsa,drn,dshift,djal,mzero,
+	drs,drt/*,npc*/,ebubble,dbubble); // ID stage
+	//ID 指令译码模块。注意其中包含控制器 CU、寄存器堆、及多个多路器等。
+	//其中的寄存器堆，会在系统 clock 的下沿进行寄存器写入，也就是给信号从 WB 阶段
+	//传输过来留有半个 clock 的延迟时间，亦即确保信号稳定。
+	//该阶段 CU 产生的、要传播到流水线后级的信号较多。
+	
+	
+endmodule

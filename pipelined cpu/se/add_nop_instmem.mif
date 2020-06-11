@@ -1,0 +1,42 @@
+DEPTH = 64;           % Memory depth and width are required %
+WIDTH = 32;           % Enter a decimal number %
+ADDRESS_RADIX = HEX;  % Address and value radixes are optional %
+DATA_RADIX = HEX;     % Enter BIN, DEC, HEX, or OCT; unless %
+                      % otherwise specified, radixes = HEX %
+CONTENT
+BEGIN
+[0..3F] : 00000000;   % Range--Every address from 0 to 1F = 00000000 %
+
+ 0 : 3c010000;        % (00) main:   lui $1, 0            # address of data[0] %      %
+ 1 : 34240050;        % (04)         ori $4, $1, 80       # address of data[0] %      %
+ 2 : 20050004;        % (08)         addi $5, $0, 4       # counter %                 %
+ 3 : 0c000019;        % (0c) call:   jal sum              # call function %           %
+ 4 : ac820000;        % (10)         sw $2, 0($4)         # store result %            %
+ 5 : 8c890000;        % (14)         lw $9, 0($4)         # check sw %                %
+ 6 : 01244022;        % (18)         sub $8, $9, $4       # sub: $8 <- $9 - $4 %      %
+ 7 : 20050003;        % (1c)         addi $5, $0, 3       # counter %                 %
+ 8 : 20a5ffff;        % (20) loop2:  addi $5, $5, -1      # counter - 1 %             %
+ 9 : 34a8ffff;        % (24)         ori $8, $5, 0xffff   # zero-extend: 0000ffff %   %
+ A : 39085555;        % (28)         xori $8, $8, 0x5555  # zero-extend: 0000aaaa %   %
+ B : 2009ffff;        % (2c)         addi $9, $0, -1      # sign-extend: ffffffff %   %
+ C : 312affff;        % (30)         andi $10, $9, 0xffff # zero-extend: 0000ffff %   %
+ D : 01493025;        % (34)         or $6, $10, $9       # or: ffffffff %            %
+ E : 01494026;        % (38)         xor $8, $10, $9      # xor: ffff0000 %           %
+ F : 01463824;        % (3c)         and $7, $10, $6      # and: 0000ffff %           %
+10 : 10a00002;        % (40)         beq $5, $0, shift    # if $5 = 0, goto shift %   %
+12 : 08000008;        % (48)         j loop2              # jump loop2 %              %
+13 : 2005ffff;        % (4c) shift:  addi $5, $0, -1      # $5 = ffffffff %           %
+14 : 000543c0;        % (50)         sll $8, $5, 15       # <<15 = ffff8000 %         %
+15 : 00084400;        % (54)         sll $8, $8, 16       # <<16 = 80000000 %         %
+16 : 00084403;        % (58)         sra $8, $8, 16       # >>16 = ffff8000 (arith) % %
+17 : 000843c2;        % (5c)         srl $8, $8, 15       # >>15 = 0001ffff (logic) % %
+18 : 08000018;        % (60) finish: j finish             # dead loop %               %
+19 : 00004020;        % (64) sum:    add $8, $0, $0       # sum %                     %
+1A : 8c890000;        % (68) loop:   lw $9, 0($4)         # load data %               %
+1B : 20840004;        % (6c)         addi $4, $4, 4       # address + 4 %             %
+1C : 01094020;        % (70)         add $8, $8, $9       # sum %                     %
+1D : 20a5ffff;        % (74)         addi $5, $5, -1      # counter - 1 %             %
+1E : 14a0fffb;        % (78)         bne $5, $0, loop     # finish? %                 %
+1F : 00081000;        % (7c)         sll $2, $8, 0        # move result to $v0 %      %
+20 : 03e00008;        % (80)         jr $ra               # return %                  %
+END ;

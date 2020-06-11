@@ -1,0 +1,3 @@
+module pipepc(npc,wpcir,clock,resetn,pc);
+
+endmodule

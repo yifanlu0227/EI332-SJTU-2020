@@ -1,0 +1,81 @@
+
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:21:59>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:22:01>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:22:06>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:22:09>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:26:38>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:26:38>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:27:35>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:27:35>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:27:35>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:27:41>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:27:41>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:27:43>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:28:04>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:28:05>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:28:05>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/altera/work5 pipelined cpu/lpm_ram_dq_dram.v
+
+Jun 04 08AM:28:06>: Megafunction LPM_RAM_DQ is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

@@ -1,0 +1,9 @@
+module pipeexe(ealuimm, ea, eb, eimm, esa, eshift, ern0,
+	epc4, ejal, ern, ealu, ezero, ert, wrn, wdi, malu, wwreg); // EXE stage
+	input ebubble;
+	input ewreg, em2reg,ewmem,ealuimm,eshift,ejal;
+	input [4:0] ers, ert, esa, ern0 ; 
+	input [3:0] ealuc;
+	input [31:0] ea,eb,eimm,epc4;
+	
+endmodule
